@@ -36,3 +36,6 @@ Route::resource('photo', PhotoController::class);
 Route::resource('photos', PhotoController::class)->only([
     'index','show'
 ]);
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
